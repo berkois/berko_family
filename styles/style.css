@@ -1,4 +1,23 @@
+@font-face {
+  font-family: "Varela Round", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+.page-header {
+  width: 100wv;
+  height: 500px;
+  background-image: url(https://photos.app.goo.gl/GS9ERS8tUcrfjyTZ7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-header__text {
+  font-family: "Varela Round", sans-serif;
+  font-size: 55px;
+  text-align: center;
 }
