@@ -6,6 +6,7 @@
   line-height: 1.2;
   animation: fadeIn 3.5s;
   text-shadow: 2px 2px 4px #0a0a0a;
+  text-align: center;
 }
 
 @keyframes fadeIn {
@@ -33,4 +34,10 @@
 .welcome__message_top {
   position: absolute;
   top: 100px;
+}
+
+@media screen and (max-width: 400px) {
+  .welcome__message {
+    font-size: 40px;
+  }
 }
