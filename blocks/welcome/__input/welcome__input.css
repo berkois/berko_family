@@ -1,0 +1,10 @@
+.welcome__input {
+  all: unset;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: GveretLevinAlefAlefAlef;
+  font-size: 20px;
+}
+
+.welcome__input_state_error {
+  border-bottom: 1px solid #ff0000;
+}

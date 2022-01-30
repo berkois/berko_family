@@ -1,0 +1,8 @@
+.logo {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 10px;
+  top: 5px;
+  z-index: 1000;
+}

@@ -1,0 +1,36 @@
+.welcome__message {
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: GveretLevinAlefAlefAlef;
+  font-size: 90px;
+  line-height: 1.2;
+  animation: fadeIn 3.5s;
+  text-shadow: 2px 2px 4px #0a0a0a;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.welcome__message:hover {
+  cursor: pointer;
+}
+
+.welcome__message_top {
+  position: absolute;
+  top: 100px;
+}

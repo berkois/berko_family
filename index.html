@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="he" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Israel Berko" />
+    <meta name="description" content="האתר של משפחת ברקו!" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="icon" href="./images/berkologo.ico" />
     <title>משפחת ברקו</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
-    </style>
   </head>
 
   <body>
-    <main>
-      <header class="page-header">
-        <h1 class="page-header__text">הבית של משפחת ברקו</h1>
+    <main class="page">
+      <header class="header">
+        <a href="#"><img class="logo" src="./images/berko-logo.jpeg" /></a>
       </header>
-      <nav class="page-menu">
-        <div class="page-menu__dropdown dropdown">
-          <button class="dropdown__button dropdown__button_type_hover">
-            גלריה
-          </button>
-          <div class="dropdown__content">
-            <a class="dropdown__link" href="#">שמואלי</a>
-            <a class="dropdown__link" href="#">כרמלי</a>
-            <a class="dropdown__link" href="#">תמרי</a>
-            <a class="dropdown__link" href="#">טיולים בלתי נשכחים</a>
-            <a class="dropdown__link" href="#">עוד תמונות</a>
-          </div>
-        </div>
-      </nav>
-      <div></div>
+      <div class="welcome">
+        <h2 class="welcome__message">ברוך הבא, ברקואי יקר!</h2>
+        <form name="welcome-form" class="form welcome__form" novalidate>
+          <label class="welcome__form-label">אז מי פה המחליט פה היום?</label>
+          <input type="text" class="welcome__input" id="name-input" placeholder="כאן כותבים את השם..." minlength="1" required />
+          <span class="welcome__input-error name-input-error">חייבים לרשום את השם!</span>
+          <button type="submit" class="button welcome__submit-button" value="go">ברוך הבא!</button>
+        </form>
+        <form name="activity-form" class="form welcome__form" novalidate>
+          <label class="welcome__form-label">ומה רוצים לעשות פה היום?</label>
+          <input type="checkbox" class="welcome__input" id="activity-input" required />
+          <span class="welcome__input-error activity-error">חייבים לרשום את השם!</span>
+          <button type="submit" class="button welcome__submit-button" value="go">יאללה מתחילים!</button>
+        </form>
+        <p class="welcome__success">מעולה, בואו נצא לדרך!</p>
+      </div>
     </main>
+    <script src="./scripts/validate.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
   </body>
 </html>

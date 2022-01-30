@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("./fonts/Inter-Regular.woff2") format("woff2"), url("./fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(""), url("./fonts/Inter-Medium.woff2") format("woff2"), url("./fonts/Inter-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local(""), url("./fonts/Inter-Black.woff2") format("woff2"), url("./fonts/Inter-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AmaticaSC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("./fonts/AmaticaSC-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "AmaticaSC";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""), url("./fonts/AmaticaSC-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "ankaclm";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""), url("./fonts/ankaclm-bold-webfont.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "dragon";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("./fonts/dragon-webfont.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "drugulinclm";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""), url("./fonts/drugulinclm-bold-webfont.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "drugulinclm";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""), url("./fonts/drugulinclm-bolditalic-webfont.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "FrankRuhlLibre";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("./fonts/FrankRuhlLibre-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "FrankRuhlLibre";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(""), url("./fonts/FrankRuhlLibre-Medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "FrankRuhlLibre";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""), url("./fonts/FrankRuhlLibre-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "FrankRuhlLibre";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local(""), url("./fonts/FrankRuhlLibre-Black.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "FrankRuhlLibre";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local(""), url("./fonts/FrankRuhlLibre-Light.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "makabiyg";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("./fonts/makabiyg-webfont.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "VarelaRound";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("./fonts/VarelaRound-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YiddishkeitAlefAlefAlef";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""), url("./fonts/YiddishkeitAlefAlefAlef-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DanaYadAlefAlefAlef";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("./fonts/DanaYadAlefAlefAlef-Normal.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GveretLevinAlefAlefAlef";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("./fonts/GveretLevinAlefAlefAlef-Regular.woff") format("woff"), url("./fonts/GveretLevinAlefAlefAlef-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Alef";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("./fonts/Alef-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Alef";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""), url("./fonts/Alef-Bold.woff") format("woff");
+}
