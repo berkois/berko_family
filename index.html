@@ -17,13 +17,13 @@
       </header>
       <div class="welcome">
         <h2 class="welcome__message">ברוך הבא, ברקואי יקר!</h2>
-        <form name="welcome-form" class="form welcome__form" novalidate>
+        <form name="welcome-form" class="form welcome__form welcome__form_type_welcome" novalidate>
           <label class="welcome__form-label">אז מי פה המחליט פה היום?</label>
           <input type="text" class="welcome__input" id="name-input" placeholder="כאן כותבים את השם..." minlength="1" required />
           <span class="welcome__input-error name-input-error">חייבים לרשום את השם!</span>
           <button type="submit" class="button welcome__submit-button" value="go">ברוך הבא!</button>
         </form>
-        <form name="activity-form" class="form welcome__form" novalidate>
+        <form name="activity-form" class="form welcome__form welcome__form_type_activity" novalidate>
           <label class="welcome__form-label">ומה רוצים לעשות פה היום?</label>
           <input type="checkbox" class="welcome__input" id="activity-input" required />
           <span class="welcome__input-error activity-error">חייבים לרשום את השם!</span>
