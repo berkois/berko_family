@@ -4,8 +4,11 @@ const welcomeForm = welcomeWindow.querySelector(".welcome__form_type_welcome");
 const activityForm = welcomeWindow.querySelector(".welcome__form_type_activity");
 const formVisibilityClass = "welcome__form_visible";
 const nameInput = welcomeForm.querySelector(".welcome__input");
-const userName = nameInput.value;
+const initialName = "ברקואי יקר";
 
+const showWelcomeMessage = (givenName) => {
+  welcomeMessage.textContent = `ברוך הבא, ${givenName}!`;
+};
 const makeFormVisible = (form) => {
   form.classList.add(formVisibilityClass);
   welcomeMessage.classList.add("welcome__message_top");
@@ -24,6 +27,10 @@ welcomeWindow.addEventListener("click", () => {
 
 welcomeForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
+  const userName = nameInput.value;
   makeFormInvisible(welcomeForm);
   makeFormVisible(activityForm);
+  showWelcomeMessage(userName);
 });
+
+showWelcomeMessage(initialName);
