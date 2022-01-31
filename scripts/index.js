@@ -11,7 +11,7 @@ const showGoButton = () => {
 };
 
 const showWelcomeMessage = (givenName) => {
-  welcomeMessage.textContent = `ברוך הבא, ${givenName}!`;
+  welcomeMessage.textContent = `איזה כיף לראותך, ${givenName}!`;
   welcomeMessage.classList.add("welcome__message_active");
 };
 
