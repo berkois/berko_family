@@ -2,10 +2,9 @@
   margin: 0 auto;
   width: calc(100% - 30px);
   color: #ffffff;
-  font-family: GveretLevinAlefAlefAlef;
   font-size: 90px;
   line-height: 1.2;
-  text-shadow: 2px 2px 4px #0a0a0a;
+  text-shadow: 0px 0px 20px #0a0a0a;
   text-align: center;
   display: none;
 }

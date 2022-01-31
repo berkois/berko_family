@@ -1,9 +1,20 @@
 const welcomeWindow = document.querySelector(".welcome");
 const welcomeMessage = welcomeWindow.querySelector(".welcome__message");
 const welcomeForm = welcomeWindow.querySelector(".welcome__form_type_welcome");
-const formInvisibilityClass = "welcome__form_invisible";
+const passwordForm = welcomeWindow.querySelector(".welcome__form_type_password");
+const formVisibilityClass = "welcome__form_visible";
 const nameInput = welcomeForm.querySelector(".welcome__input");
+const passwordInput = passwordForm.querySelector(".welcome__input");
 const welcomeGoButton = welcomeWindow.querySelector(".welcome__go-button");
+const correctPassword = "9194";
+
+const isCorrectPassword = (input) => {
+  if (input === correctPassword) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
 const showGoButton = () => {
   welcomeGoButton.classList.add("welcome__go-button_active");
@@ -15,18 +26,36 @@ const showWelcomeMessage = (givenName) => {
   welcomeMessage.classList.add("welcome__message_active");
 };
 
+const makeFormVisible = (form) => {
+  form.classList.add(formVisibilityClass);
+};
+
 const makeFormInvisible = (form) => {
-  form.classList.add(formInvisibilityClass);
+  form.classList.remove(formVisibilityClass);
 };
 
 document.addEventListener("click", () => {
-  welcomeWindow.classList.add("welcome_no_animation");
+  welcomeForm.classList.add("welcome__form_no_animation");
 });
 
 welcomeForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
-  const userName = nameInput.value;
   makeFormInvisible(welcomeForm);
-  showWelcomeMessage(userName);
-  showGoButton();
+  makeFormVisible(passwordForm);
 });
+
+passwordForm.addEventListener("submit", (evt) => {
+  evt.preventDefault();
+  const userName = nameInput.value;
+  const passwordEntered = passwordInput.value;
+  if (isCorrectPassword(passwordEntered)) {
+    makeFormInvisible(passwordForm);
+    showWelcomeMessage(userName);
+    showGoButton();
+  } else {
+    showInputError(passwordForm, passwordInput, { inputErrorClass: "welcome__input_state_error", errorClass: "welcome__input-error_active" });
+    alert("איזה מין ברקואים אתם???");
+  }
+});
+
+makeFormVisible(welcomeForm);

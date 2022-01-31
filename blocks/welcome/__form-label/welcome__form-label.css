@@ -1,3 +1,5 @@
 .welcome__form-label {
   position: relative;
+  box-sizing: border-box;
+  max-width: fit-content;
 }

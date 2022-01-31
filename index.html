@@ -18,9 +18,15 @@
       <div class="welcome">
         <form name="welcome-form" class="form welcome__form welcome__form_type_welcome" novalidate>
           <label class="welcome__form-label"
-            >עם מי יש לנו הכבוד?
-            <input type="text" class="welcome__input" id="name-input" value="" placeholder="כאן כותבים את השם..." minlength="1" required />
+            >עם מי יש לנו הכבוד?<input type="text" class="welcome__input" id="name-input" value="" placeholder="כאן כותבים את השם..." minlength="1" required />
             <span class="welcome__input-error name-input-error">חייבים לרשום את השם!</span>
+          </label>
+          <button type="submit" class="button welcome__submit-button" value="go">ברצון ובשמחה!</button>
+        </form>
+        <form name="password-form" class="form welcome__form welcome__form_type_password" novalidate>
+          <label class="welcome__form-label"
+            >רגע - צריך גם קוד סודי:<input type="text" class="welcome__input" id="password-input" value="" placeholder="לא באמת סודי אצל ברקו..." minlength="4" maxlength="4" required />
+            <span class="welcome__input-error password-input-error">אתם ברקואים אתם???</span>
           </label>
           <button type="submit" class="button welcome__submit-button" value="go">מתחילים!</button>
         </form>
