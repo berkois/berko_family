@@ -1,3 +1,35 @@
 .welcome__submit-button {
-  border-radius: 13px;
+  font-size: 33px;
+  align-self: center;
+  border-bottom: solid white 0.3px;
+}
+
+.welcome__submit-button_inactive {
+  cursor: not-allowed;
+  opacity: 0.3;
+  border-bottom: none;
+}
+
+@media screen and (max-width: 900px) {
+  .welcome__submit-button {
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .welcome__submit-button {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .welcome__submit-button {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .welcome__submit-button {
+    font-size: 16px;
+  }
 }

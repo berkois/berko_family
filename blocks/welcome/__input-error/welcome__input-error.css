@@ -1,13 +1,37 @@
 .welcome__input-error {
-  font-size: 12px;
-  line-height: 15px;
-  color: #ff0000;
+  font-size: 17px;
+  line-height: 1.2;
+  color: rgba(255, 0, 0, 0.5);
   position: absolute;
-  top: calc(100% + 5px);
-  left: 0;
+  top: calc(100% - 8px);
+  right: 0;
   opacity: 0;
 }
 
 .welcome__input-error_active {
   opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .welcome__input-error {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .welcome__input-error {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .welcome__input-error {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .welcome__input-error {
+    font-size: 9px;
+  }
 }

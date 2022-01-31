@@ -6,7 +6,7 @@
     <meta name="author" content="Israel Berko" />
     <meta name="description" content="האתר של משפחת ברקו!" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="icon" href="./images/berkologo1.ico" />
+    <link rel="icon" href="./images/befkofavicon.ico" />
     <title>משפחת ברקו</title>
   </head>
 
@@ -16,20 +16,16 @@
         <a href="#"><img class="logo" src="./images/berkologo1.png" /></a>
       </header>
       <div class="welcome">
-        <h2 class="welcome__message"></h2>
         <form name="welcome-form" class="form welcome__form welcome__form_type_welcome" novalidate>
-          <label class="welcome__form-label">אז מי פה המחליט פה היום?</label>
-          <input type="text" class="welcome__input" id="name-input" value="" placeholder="כאן כותבים את השם..." minlength="1" required />
-          <span class="welcome__input-error name-input-error">חייבים לרשום את השם!</span>
-          <button type="submit" class="button welcome__submit-button" value="go">ברוך הבא!</button>
+          <label class="welcome__form-label"
+            >עם מי יש לנו הכבוד?
+            <input type="text" class="welcome__input" id="name-input" value="" placeholder="כאן כותבים את השם..." minlength="1" required />
+            <span class="welcome__input-error name-input-error">חייבים לרשום את השם!</span>
+          </label>
+          <button type="submit" class="button welcome__submit-button" value="go">מתחילים!</button>
         </form>
-        <form name="activity-form" class="form welcome__form welcome__form_type_activity" novalidate>
-          <label class="welcome__form-label">ומה רוצים לעשות פה היום?</label>
-          <input type="checkbox" class="welcome__input" id="activity-input" required />
-          <span class="welcome__input-error activity-error">חייבים לרשום את השם!</span>
-          <button type="submit" class="button welcome__submit-button" value="go">יאללה מתחילים!</button>
-        </form>
-        <p class="welcome__success">מעולה, בואו נצא לדרך!</p>
+        <h2 class="welcome__message"></h2>
+        <button class="button welcome__go-button">להיכנס ←</button>
       </div>
     </main>
     <script src="./scripts/validate.js" defer></script>
